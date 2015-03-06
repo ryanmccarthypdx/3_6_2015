@@ -3,5 +3,4 @@ Zmail.Router.map(function() {
     this.resource('compose');
   });
   this.resource('email', {path: 'email/:email_id'});
-  this.resource('new-folder');
 })

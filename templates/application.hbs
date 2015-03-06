@@ -1,12 +1,8 @@
 <div class="container">
+  {{#link-to 'home'}}
   <h1>Zmail!</h1>
   <h4><em>Inboxes are so 1998: Sent Items is the box of the future!</em></h4>
-  <nav class='navbar navbar-default' role='navigation'>
-    <ul class='nav navbar-nav'>
-      <li>{{#link-to 'home'}}<strong>Sent Items</strong>{{/link-to}}</li>
-      <li>{{#link-to 'new-folder'}}Add a folder{{/link-to}}</li>
-    </ul>
-  </nav>
+  {{/link-to}}
 
   {{outlet}}
 
