@@ -3,7 +3,8 @@ Zmail.ComposeController = Ember.ArrayController.extend({
     sendEmail: function() {
       var newEmail = this.store.createRecord('email', {
         addressee: this.get('addressee'),
-        body: this.get('body')
+        body: this.get('body'),
+        subject: this.get('subject')
       });
       newEmail.save();
       this.set('addressee', null);

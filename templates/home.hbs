@@ -4,9 +4,10 @@
   {{outlet}}
 
   <h2>Sent Items:</h2>
+  <p><small>(click on each for more details)</small></p>
   <ul>
-    {{#each}}
-      <li>{{addressee}}</li>
+    {{#each email in model}}
+      <li>{{#link-to 'email' email}}{{email.addressee}}{{/link-to}}</li>
     {{/each}}
   </ul>
 
