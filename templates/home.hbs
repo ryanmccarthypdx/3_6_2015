@@ -7,7 +7,7 @@
   <p><small>(click on each for more details)</small></p>
   <ul>
     {{#each email in model}}
-      <li>{{#link-to 'email' email}}{{email.addressee}}{{/link-to}}</li>
+      <li>{{#link-to 'email' email}}{{email.addressee}}, {{email.subject}}{{/link-to}}</li>
     {{/each}}
   </ul>
 

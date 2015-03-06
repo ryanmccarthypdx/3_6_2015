@@ -9,6 +9,7 @@ Zmail.ComposeController = Ember.ArrayController.extend({
       newEmail.save();
       this.set('addressee', null);
       this.set('body', null);
+      this.set('subject', null);
       this.transitionToRoute('home');
     }
   }
