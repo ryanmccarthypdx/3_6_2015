@@ -1,0 +1,11 @@
+<div class="compose-form">
+  <form>
+    <div class="form-group">
+      {{input value=addressee placeholder="Enter Addressee"}}
+    </div>
+    <div class="form-group">
+      {{textarea value=body rows="10" placeholder="Write Email Here"}}
+    </div>
+    <button {{action "sendEmail"}} class="btn btn-danger">Send Email</button>
+  </form>
+</div>

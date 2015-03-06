@@ -1,6 +1,8 @@
 <div class="jumbotron">
   <p>{{#link-to 'compose' class="btn btn-primary"}}Compose New Email{{/link-to}}</p>
 
+  {{outlet}}
+
   <ul>
     {{#each}}
       <li>{{addressee}}</li>
