@@ -1,1 +1,10 @@
-<h1>Home</h1>
+<div class="jumbotron">
+  <p>{{#link-to 'compose' class="btn btn-primary"}}Compose New Email{{/link-to}}</p>
+
+  <ul>
+    {{#each}}
+      <li>{{addressee}}</li>
+    {{/each}}
+  </ul>
+
+</div>
